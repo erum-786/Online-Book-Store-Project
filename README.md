@@ -106,5 +106,5 @@ Online-Book-Store-Project
 
 ## Author
 Erum Mansoori
-- LinkedIn: [Erum Mansoori](www.linkedin.com/in/erum-mansoori)
+- LinkedIn: [Erum Mansoori](https://www.linkedin.com/in/erum-mansoori/)
   
