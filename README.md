@@ -40,13 +40,13 @@ Online-Book-Store-Project
 │   ├── Customers.csv
 │   └── Orders.csv
 │   
-├── Results/
-│   ├── 7_books_with_lowest_stock
-|   ├── book_sold_based on genre
-|   ├── customer_spent_more
-|   ├── most_expensive_books
-|   ├── most_frequently ordered book
-│
+├── screenshot/
+|   ├── 5 most expensive books.png
+|   ├── Highest spending customer.png
+|   ├── book sold based on gemre.png
+|   ├── books with lowest stock.png
+|   ├── most frequently order book.png
+|
 ├── ERD of online book store.png 
 └── README.md
 ```
@@ -54,6 +54,22 @@ Online-Book-Store-Project
 
 ## 📂 Database Schema(ER Diagram)
 <img width="958" height="586" alt="ERD of online book store" src="https://github.com/user-attachments/assets/e5e271d2-9891-4993-9f6c-de70131fa4ce" />
+---
+
+## 📷 Sample Analysis Results
+
+### 5 Most Expensive Books
+<img width="955" height="167" alt="5 most expensive books" src="https://github.com/user-attachments/assets/1edb2fcd-a9bb-44d7-8a89-043dfe914a34" />
+
+### Available genre
+<img width="205" height="223" alt="available_genre" src="https://github.com/user-attachments/assets/a0be86ee-c7d5-437e-adf4-22b24ac8be5a" />
+
+### Highest Spending Customers
+<img width="392" height="175" alt="Highest spending customer" src="https://github.com/user-attachments/assets/bf6723a1-a2ea-4805-9ce5-10817e317994" />
+
+### 5 Most Frequently Order Books
+<img width="429" height="169" alt="most frequently order book" src="https://github.com/user-attachments/assets/6ed237bf-970b-404e-8754-b7d1b5d5c0e9" />
+
 ---
 
 ## 📊 SQL Concepts Covered
@@ -90,5 +106,5 @@ Online-Book-Store-Project
 
 ## Author
 Erum Mansoori
-- LinkedIn: [Erum Mansoori] (www.linkedin.com/in/erum-mansoori)
+- LinkedIn: [Erum Mansoori](www.linkedin.com/in/erum-mansoori)
   
