@@ -1,8 +1,9 @@
 # 📚 Online Book Store SQL Project
 
 ## 📌 Project Overview
-A SQL-based **Online Book Store Management System** developed using **PostgreSQL**. It includes database creation, table relationships,
-data manipulation, and analytical SQL queries to generate meaningful business insights.
+This project demonstrate SQL-based **Online Book Store Management System** developed using **PostgreSQL**. It includes database creation, table relationships, data manipulation, and analytical SQL queries to generate meaningful business insights.
+
+The project showcases practical SQL skills used in real-world data analytics and business intelligence.
 
 ### Key Objectives
 
@@ -39,10 +40,14 @@ Online-Book-Store-Project
 │   ├── Customers.csv
 │   └── Orders.csv
 │   
-├── Screenshots/
-│   ├── ERD of online book store.png
-│   └── Query_Results.png
-│   
+├── Results/
+│   ├── 7_books_with_lowest_stock
+|   ├── book_sold_based on genre
+|   ├── customer_spent_more
+|   ├── most_expensive_books
+|   ├── most_frequently ordered book
+│
+├── ERD of online book store.png 
 └── README.md
 ```
 ---
@@ -69,22 +74,21 @@ Online-Book-Store-Project
 ### Basic Queries
 
 - Retrieve books by genre
-- Find customers by country
-- View monthly orders
 - Calculate total stock
 - Find the most expensive book
-- Calculate total revenue
+- Calculate total revenue, etc.
 
 ### Advanced Queries
 
 - Best-selling books
 - Books sold by genre
 - Highest spending customer
-- Customer spending by city
 - Remaining stock after sales
+- Most expensive books
 
 ---
 
 ## Author
 Erum Mansoori
-- LinkedIn: 'www.linkedin.com/in/erum-mansoori'
+- LinkedIn: [Erum Mansoori] (www.linkedin.com/in/erum-mansoori)
+  
