@@ -25,9 +25,11 @@ The project showcases practical SQL skills used in real-world data analytics and
 ---
 ## 🛠️ Tech Stack
 
-- PostgreSQL
-- SQL (DDL, DML, DQL)
-- pgAdmin
+- PostgreSQL – Database management
+- DDL – Database/table creation and modification
+- DML – Insert, update, and delete operations
+- DQL – Data retrieval using SELECT
+- pgAdmin 4 – PostgreSQL database administration
 
 ---
 ## 📷 Repository Structure
@@ -58,16 +60,55 @@ Online-Book-Store-Project
 
 ## 📷 Sample Analysis Results
 
-### 5 Most Expensive Books
-<img width="955" height="167" alt="5 most expensive books" src="https://github.com/user-attachments/assets/1edb2fcd-a9bb-44d7-8a89-043dfe914a34" />
-
-### Available genre
-<img width="205" height="223" alt="available_genre" src="https://github.com/user-attachments/assets/a0be86ee-c7d5-437e-adf4-22b24ac8be5a" />
-
 ### Highest Spending Customers
+```sql
+SELECT o.customer_id, c.name, SUM(o.total_amount) AS total_spent
+FROM Orders o
+JOIN Customers c
+ON o.customer_id = c.customer_id
+GROUP BY o.customer_id, c.name
+ORDER BY total_spent DESC
+LIMIT 5;
+```
 <img width="392" height="175" alt="Highest spending customer" src="https://github.com/user-attachments/assets/bf6723a1-a2ea-4805-9ce5-10817e317994" />
 
+### Available genre
+```sql
+SELECT DISTINCT(genre)
+FROM Books;
+```
+<img width="205" height="223" alt="available_genre" src="https://github.com/user-attachments/assets/a0be86ee-c7d5-437e-adf4-22b24ac8be5a" />
+
+
+### 5 Most Expensive Books
+```sql
+SELECT *
+FROM BOOKS
+ORDER BY price DESC
+LIMIT 5;
+```
+
+<img width="955" height="167" alt="5 most expensive books" src="https://github.com/user-attachments/assets/1edb2fcd-a9bb-44d7-8a89-043dfe914a34" />
+
+### Book sold by each Genre
+```sql
+SELECT b.genre, SUM(o.quantity) AS total_books_sold
+FROM Books b
+INNER JOIN Orders o
+ON b.book_id = o.book_id
+GROUP BY b.genre;
+```
+<img width="315" height="217" alt="image" src="https://github.com/user-attachments/assets/4e8981bd-c67a-4636-aec6-54793e32e34b" />
+
 ### 5 Most Frequently Order Books
+```sql
+SELECT o.book_id, b.title, COUNT(o.order_id) AS order
+FROM orders o
+JOIN books b
+ON o.book_id = b.book_id
+GROUP BY o.book_id, b.title
+ORDER BY COUNT(o.order_id) DESC LIMIT 1;
+```
 <img width="429" height="169" alt="most frequently order book" src="https://github.com/user-attachments/assets/6ed237bf-970b-404e-8754-b7d1b5d5c0e9" />
 
 ---
